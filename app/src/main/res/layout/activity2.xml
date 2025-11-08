@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardPerfil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#F2ECF9"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Avatar círculo -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="#E9DDFB"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/iconUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👤"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Nombre"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/avatar"
+            app:layout_constraintTop_toTopOf="@id/avatar" />
+
+        <EditText
+            android:id="@+id/inputNombre"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:hint="Nombre"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/Nombre"
+            app:layout_constraintTop_toBottomOf="@id/Nombre" />
+
+
+        <TextView
+            android:id="@+id/Profesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Profesión"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/inputNombre"
+            app:layout_constraintTop_toBottomOf="@id/inputNombre" />
+
+        <EditText
+            android:id="@+id/inputProfesion"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:hint="Profesión"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/Profesion"
+            app:layout_constraintTop_toBottomOf="@id/Profesion" />
+
+
+        <TextView
+            android:id="@+id/Nacionalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Nacionalidad"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/inputProfesion"
+            app:layout_constraintTop_toBottomOf="@id/inputProfesion" />
+
+        <EditText
+            android:id="@+id/inputNacionalidad"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:hint="Nacionalidad"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/Nacionalidad"
+            app:layout_constraintTop_toBottomOf="@id/Nacionalidad" />
+
+
+        <TextView
+            android:id="@+id/Estudios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Estudios"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/inputNacionalidad"
+            app:layout_constraintTop_toBottomOf="@id/inputNacionalidad" />
+
+
+        <EditText
+            android:id="@+id/inputEstudios"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:hint="Estudios"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/Estudios"
+            app:layout_constraintTop_toBottomOf="@id/Estudios"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnContinuar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6E3FF3"
+            android:text="Guardar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputEstudios" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
