@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         User encontrado = db.comprobarUsuarioLocal(u, p);
         if (encontrado.getId() != -1) {
-            Intent i = new Intent(this, MainActivity2.class);
+            Intent i = new Intent(this, Activity3.class);
             i.putExtra("username", encontrado.getNombreUsuario());
             startActivity(i);
             finish();

@@ -13,6 +13,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import com.example.parcial2.modelos.Persona;
+import java.util.ArrayList;
 
 public class DBHelper extends SQLiteAssetHelper {
 
@@ -206,5 +208,31 @@ public class DBHelper extends SQLiteAssetHelper {
         }
     }
 
+
+
+    // adentro de DBHelper:
+    public ArrayList<Persona> getAllPersonas() {
+        ArrayList<Persona> lista = new ArrayList<>();
+        SQLiteDatabase db = getReadableDatabase();
+
+        Cursor c = db.rawQuery(
+                "SELECT id, nombre, profesion, nacionalidad, estudios FROM persona",
+                null
+        );
+
+        if (c.moveToFirst()) {
+            do {
+                Persona p = new Persona();
+                p.setId(c.getInt(0));
+                p.setNombre(c.getString(1));
+                p.setProfesion(c.getString(2));
+                p.setNacionalidad(c.getString(3));
+                p.setEstudios(c.getString(4));
+                lista.add(p);
+            } while (c.moveToNext());
+        }
+        c.close();
+        return lista;
+    }
 
 }

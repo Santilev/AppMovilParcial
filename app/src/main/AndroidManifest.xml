@@ -25,6 +25,8 @@
         <activity
             android:name=".actividades.MainActivity2"
             android:exported="false" />
+        <activity android:name=".actividades.Activity3" android:exported="false"/>
+
     </application>
 
 </manifest>

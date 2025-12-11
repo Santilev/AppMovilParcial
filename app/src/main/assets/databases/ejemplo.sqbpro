@@ -1,23 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="ejemplo.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1203"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="0" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="tabla_usuario" custom_title="0" dock_id="1" table="4,13:maintabla_usuario"/><dock_state state="000000ff00000000fd00000001000000020000064b00000398fc0100000001fb000000160064006f0063006b00420072006f007700730065003101000000000000064b0000011e00ffffff000002690000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="persona" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="52"/><column index="3" value="52"/><column index="4" value="61"/><column index="5" value="79"/><column index="6" value="56"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="40"/><column index="2" value="35"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tabla_usuario" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="67"/><column index="2" value="101"/><column index="3" value="62"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">BEGIN TRANSACTION;
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="ejemplo.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="912"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="persona" custom_title="0" dock_id="2" table="4,7:mainpersona"/><dock_state state="000000ff00000000fd00000001000000020000037a000002b7fc0100000001fc000000000000037a0000012300fffffffa000000010100000002fb000000160064006f0063006b00420072006f00770073006500310000000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000012300ffffff000002690000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="persona" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="135"/><column index="3" value="271"/><column index="4" value="79"/><column index="5" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tabla_usuario" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="67"/><column index="2" value="101"/><column index="3" value="62"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">INSERT INTO persona (nombre, profesion, nacionalidad, estudios) VALUES
+('Santiago Torres', 'Analista de Datos', 'Argentina', 'Ciencia de Datos'),
+('Martina López', 'Diseñadora UX/UI', 'Argentina', 'Diseño Gráfico'),
+('Julián Fernández', 'Desarrollador Backend', 'Argentina', 'Ingeniería en Sistemas'),
+('Camila Vázquez', 'Especialista en Marketing', 'Argentina', 'Marketing Digital'),
+('Tomás Herrera', 'Programador Full Stack', 'Argentina', 'Ciencias de la Computación'),
+('Valentina Duarte', 'Community Manager', 'Argentina', 'Marketing Digital'),
+('Agustín Benítez', 'QA Tester', 'Argentina', 'Ciencias de la Computación'),
+('Lucía Pereyra', 'Diseñadora Web', 'Argentina', 'Diseño Gráfico'),
+('Nicolás Mansilla', 'Ingeniero DevOps', 'Argentina', 'Ingeniería en Sistemas'),
+('Emilia González', 'Científica de Datos', 'Argentina', 'Ciencia de Datos'),
 
--- 1) Crear una tabla nueva sin 'apellido'
-CREATE TABLE persona_new (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  nombre TEXT NOT NULL,
-  profesion TEXT,
-  nacionalidad TEXT,
-  estudios TEXT
-);
+('Rodrigo Medina', 'Data Engineer', 'Argentina', 'Ciencia de Datos'),
+('Abril Giménez', 'Social Media Manager', 'Argentina', 'Marketing Digital'),
+('Lucas Ramírez', 'Software Engineer', 'Argentina', 'Ingeniería en Sistemas'),
+('Florencia Rivas', 'Ilustradora Digital', 'Argentina', 'Diseño Gráfico'),
+('Federico Campos', 'Machine Learning Engineer', 'Argentina', 'Ciencia de Datos'),
+('Julieta Molina', 'Analista de Marketing', 'Argentina', 'Marketing Digital'),
+('Bruno Soria', 'Arquitecto de Software', 'Argentina', 'Ingeniería en Sistemas'),
+('Paula Navarro', 'Diseñadora UI', 'Argentina', 'Diseño Gráfico'),
+('Matías Álvarez', 'Desarrollador Mobile', 'Argentina', 'Ciencias de la Computación'),
+('Carolina Paredes', 'Data Scientist', 'Argentina', 'Ciencia de Datos'),
 
--- 2) Copiar los datos (ignora 'apellido')
-INSERT INTO persona_new (id, nombre, profesion, nacionalidad, estudios)
-SELECT id, nombre, profesion, nacionalidad, estudios
-FROM persona;
+('Ignacio Villalba', 'Growth Marketer', 'Argentina', 'Marketing Digital'),
+('Sofía Acuña', 'Backend Engineer', 'Argentina', 'Ingeniería en Sistemas'),
+('Diego Roldán', 'Full Stack Developer', 'Argentina', 'Ciencias de la Computación'),
+('María Bianchi', 'Creativa Publicitaria', 'Argentina', 'Marketing Digital'),
+('Ezequiel Porta', 'DevOps Specialist', 'Argentina', 'Ingeniería en Sistemas'),
+('Bianca Romero', 'Diseñadora Freelance', 'Argentina', 'Diseño Gráfico'),
+('Kevin Arias', 'Ing. de Software', 'Argentina', 'Ingeniería en Sistemas'),
+('Rocío Castaño', 'Project Manager IT', 'Argentina', 'Ingeniería en Sistemas'),
+('Benjamín Duarte', 'Data Analyst', 'Argentina', 'Ciencia de Datos'),
+('Ariana Campos', 'Diseñadora UX', 'Argentina', 'Diseño Gráfico'),
 
--- 3) Reemplazar la tabla
-DROP TABLE persona;
-ALTER TABLE persona_new RENAME TO persona;
-
-COMMIT;
-
+('Gabriel Molina', 'Programador Web', 'Argentina', 'Ciencias de la Computación'),
+('Milagros Sosa', 'Especialista SEM', 'Argentina', 'Marketing Digital'),
+('Franco Ledesma', 'Administrador de Servidores', 'Argentina', 'Ingeniería en Sistemas'),
+('Josefina Roldán', 'Ilustradora', 'Argentina', 'Diseño Gráfico'),
+('Mauricio Delgado', 'Analista BI', 'Argentina', 'Ciencia de Datos'),
+('Lara Bustos', 'Redactora Creativa', 'Argentina', 'Marketing Digital'),
+('Esteban Pérez', 'SRE Engineer', 'Argentina', 'Ingeniería en Sistemas'),
+('Delfina Correa', 'Diseñadora de Marca', 'Argentina', 'Diseño Gráfico'),
+('Sebastián Funes', 'Software Developer', 'Argentina', 'Ciencias de la Computación'),
+('Camila Ocampo', 'Data Scientist Jr.', 'Argentina', 'Ciencia de Datos');
 </sql><current_tab id="0"/></tab_sql></sqlb_project>
